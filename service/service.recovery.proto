@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package proto;
+
+// password recovery
+
+message RecoveryRequest {
+    string email = 1;
+}
+
+message RecoveryResponse {
+    bool status = 1;
+}
+
+service RecoveryService {
+    rpc PasswordRecovery(RecoveryRequest) returns (RecoveryResponse);
+}

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package proto;
+
+message SignUpRequest {
+    string email = 1;
+    string password = 2;
+    string PersonName = 3;
+    string PersonMiddleName = 4;
+    string PersonLastName = 5;
+    string PhoneNumber = 6;
+}
+
+message SignUpResponse {
+    string email = 1;
+    string PersonName = 2;
+    string PersonMiddleName = 3;
+    string PersonLastName = 4;
+    string PhoneNumber = 5;
+    string password = 6;
+    int64 hash = 7;
+    bool status = 8;
+}
+
+service SignUpService {
+    rpc SignUp(SignUpRequest) returns (SignUpResponse);
+}
