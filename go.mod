@@ -1,4 +1,4 @@
-module htauto.im/htopauto/dependency
+module github.com/olegpolukhin/htauto-dep
 
 go 1.14
 
