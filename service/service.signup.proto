@@ -18,7 +18,7 @@ message SignUpResponse {
     string PersonLastName = 4;
     string PhoneNumber = 5;
     string password = 6;
-    int64 hash = 7;
+    uint32 hash = 7;
     bool status = 8;
 }
 
